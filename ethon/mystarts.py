@@ -1,4 +1,4 @@
-#ignore this file
+
 
 from telethon import events, Button
 
@@ -6,17 +6,16 @@ from telethon import events, Button
 async def start_srb(event, st):
     await event.reply(st, 
                       buttons=[
-                              [Button.inline("SET THUMB.", data="set"),
-                               Button.inline("REM THUMB.", data="rem")],
-                              [Button.url("DEV", url="t.me/r4h4t_69")]])
+                              [Button.inline("𝗦𝗘𝗧 𝗧𝗛𝗨𝗠𝗕.", data="set"),
+                               Button.inline("𝗥𝗘𝗠 𝗧𝗛𝗨𝗠𝗕.", data="rem")],
+                              [Button.url("Ꭰᴇᴠᴇʟᴏᴘᴇʀ", url="t.me/SA_SYR")]])
                               
     
 async def vc_menu(event):
-    await event.edit("**VIDEO CONVERTOR v1.0**", 
+    await event.edit("Vɪᴅᴇᴏ Eɴᴄᴏᴅᴇʀ", 
                     buttons=[
                         [Button.inline("INFO", data="info"),
-                         Button.inline("SOURCE", data="source")],
-                        [Button.inline("NOTICE", data="notice"),
-                         Button.inline("MAIN", data="help")],
-                        [Button.url("DEVELOPER", url="t.me/SA_SYR")]])
+                         Button.inline("Nᴏᴛɪᴄᴇ", data="notice")],
+                        [Button.inline("Ꮇᴀɪɴ", data="help")],
+                        [Button.url("Ꭰᴇᴠᴇʟᴏᴘᴇʀ", url="t.me/SA_SYR")]])
     

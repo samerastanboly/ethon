@@ -56,7 +56,7 @@ async def progress(current, total, event, start, type_of_ps, file=None):
         )
         tmp = (
             progress_str
-            + "📦 GROSS: {0} of {1}\n\n🚀 Speed: {2}/s\n\n⏱️ ETA: {3}\n\n".format(
+            + "Pʀᴏɢʀᴇѕѕ: {0} of {1}\n\nᏚᴘᴇᴇᴅ: {2}/s\n\nTɪᴍᴇ Lᴇғᴛ: {3}\n\n".format(
                 hbs(current),
                 hbs(total),
                 hbs(speed),
@@ -120,11 +120,11 @@ async def force_sub(client, channel, id, ft):
         x = await client(GetParticipantRequest(channel=channel, participant=int(id)))
         left = x.stringify()
         if 'left' in left:
-            s, r = True, f"{ft}\n\nAlso join @DroneBots"
+            s, r = True, f"{ft}\n\nAlso join @Bs"
         else:
             s, r = False, None
     except UserNotParticipantError:
-        s, r = True, f"To use this bot you've to join @{channel}.\n\nAlso join @DroneBots"
+        s, r = True, f"To use this bot you've to join @{channel}."
     except Exception:
         s, r = True, "ERROR: Add in ForceSub channel, or check your channel id."
     return s, r
